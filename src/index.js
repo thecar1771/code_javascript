@@ -1,11 +1,25 @@
 import "./styles.css";
 
+let a;
+
+const temp = function (a) {
+  return a ** 2;
+};
+
+const temp2 = (a) => {
+  return temp(a);
+};
+
+const temp3 = (a, b) => {
+  return temp(a) * temp2(b);
+};
+
+var temp4 = (a, b) => {
+  return a / b;
+};
+
+a = "바나나나" / "나나";
+
 document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
+  <div>${a}</div>
 `;
-console.log(dom);
